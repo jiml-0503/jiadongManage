@@ -289,3 +289,56 @@ button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="but
 .fontBold{
     font-weight: bold;
 }
+.header{
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    font-size: 22px;
+    color: #fff;
+    background-color: #242f42;
+}
+.header .collapse-btn{
+    float: left;
+    padding: 0 21px;
+    cursor: pointer;
+    line-height: 70px;
+}
+.header .logo{
+    float: left;
+    width: 250px;
+    line-height: 70px;
+}
+.header-right{
+    float: right;
+    padding-right: 50px;
+}
+.header-right .header-user-con{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header-right .header-user-con .user-avator{
+    margin-left: 20px;
+}
+.header-right .header-user-con .user-avator img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user-name{
+    margin-left: 10px;
+}
+.el-dropdown-link{
+    color: #fff;
+    cursor: pointer;
+}
+.el-icon-arrow-down {
+font-size: 12px;
+}

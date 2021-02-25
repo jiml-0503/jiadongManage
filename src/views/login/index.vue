@@ -56,7 +56,7 @@ export default {
             // 使用 vue-router 路由到指定页面，该方式称之为编程式导航
             _this.userToken = 'Bearer '+_this.loginForm.username;
             // 将用户token保存到vuex中
-            _this.changeLogin({ Authorization: _this.userToken });
+            _this.changeLogin({ Authorization: _this.userToken,username: _this.loginForm.username});
             alert('登陆成功');
             _this.$router.push('/home');
           } else {
