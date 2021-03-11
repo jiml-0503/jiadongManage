@@ -8,6 +8,11 @@ import '@/assets/css/public.css'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
+import '@/styles/index.scss'
+
+import '@/icons' // icon
+import '@/permission' // permission control
+
 Vue.config.productionTip = false
 Vue.use(ElementUI);
 
@@ -16,6 +21,5 @@ new Vue({
   el: '#app',
   router,
   store,
-  components: { App },
-  template: '<App/>'
+  render: h => h(App)
 })

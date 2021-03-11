@@ -1,14 +1,21 @@
 <template>
-  <div>
-    <home-header></home-header>
+  <div class="dashboard-container">
+    <div class="dashboard-text">name: {{ name }}</div>
+    <div>
+      <svg class="table"></svg>
+    </div>
   </div>
 </template>
  
 <script>
-import homeHeader from '@/components/header';
+import { mapGetters } from 'vuex';
 export default {
-  components: { homeHeader },
-  name: 'home',
+  name: 'Home',
+  computed: {
+    ...mapGetters([
+      'name'
+    ])
+  },
   data () {
     return {
       
@@ -16,3 +23,15 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.dashboard {
+  &-container {
+    margin: 30px;
+  }
+  &-text {
+    font-size: 30px;
+    line-height: 46px;
+  }
+}
+</style>

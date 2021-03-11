@@ -101,7 +101,7 @@ button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="but
 .e-lin3em{ line-height: 3em;}
 .e-lininh{line-height: inherit!important;}
 /* 段落 */
-.e-indet{ text-indent:. 2em;}
+.e-indet{ text-indent:.2em;}
 .e-indet-9999{ text-indent: -9999px!important;}
 /* 文字对齐 */
 .e-jusy{ text-align: justify;}

@@ -37,7 +37,7 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['changeLogin']),
+    ...mapMutations("user",['changeLogin']),
     login (formName) {
         let _this = this;
         // if(_this.loginForm.username === '' || _this.loginForm.password === ''){
